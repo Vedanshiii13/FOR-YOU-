@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A little place for Shriyanshh ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&family=Sacramento&display=swap" rel="stylesheet">
+<style>
+:root{--pink:#e9a6b8;--baby:#f9dce5;--nude:#d9a6a0;--peach:#f7c9b5;--cream:#fffaf8;--ink:#704b55;--deep:#a85f76}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(145deg,#fff9f7 0%,#fde8ed 48%,#fce0d3 100%);color:var(--ink);font-family:'DM Sans',sans-serif;min-height:100vh;overflow-x:hidden}
+body:before,body:after{content:"♡";position:fixed;color:#e8a7b8;opacity:.22;font-size:170px;z-index:-1;pointer-events:none}
+body:before{top:8%;left:-35px;transform:rotate(-18deg)}body:after{right:-25px;bottom:2%;font-size:220px;transform:rotate(18deg)}
+main{width:min(920px,92%);margin:0 auto;padding:42px 0 70px}
+.hero{text-align:center;padding:48px 20px 34px;position:relative}
+.eyebrow{letter-spacing:4px;text-transform:uppercase;font-size:11px;color:#b77b8b;font-weight:700}
+h1{font-family:'Sacramento',cursive;font-size:clamp(56px,10vw,96px);line-height:1.12;color:#b65f7b;margin:14px 0 8px;text-shadow:2px 3px 0 #fff}
+.subtitle{font-family:'Playfair Display',serif;font-size:clamp(17px,3vw,22px);color:#926875;margin:0}
+.sparkle{color:#d88ca3;font-size:23px;margin:12px}
+.intro-note{font-size:13px;color:#a77d85;margin-top:18px}
+.menu{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:28px auto 30px;max-width:720px}
+.menu button{border:1px solid #f1cbd4;background:rgba(255,255,255,.75);color:#965b70;border-radius:22px;padding:20px 16px;font:600 16px 'DM Sans',sans-serif;box-shadow:0 8px 22px #b9798b1c;cursor:pointer;transition:.22s;min-height:76px}
+.menu button:hover,.menu button.active{transform:translateY(-4px);background:#fff0f3;box-shadow:0 12px 25px #b9798b35;border-color:#df9eaf}
+.menu button span{display:block;font-size:23px;margin-bottom:5px}
+.panel{display:none;background:rgba(255,255,255,.82);border:1px solid #f2d2d8;border-radius:28px;padding:clamp(22px,5vw,42px);box-shadow:0 18px 45px #a967771c;animation:rise .35s ease}
+.panel.show{display:block}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.panel h2{font:700 clamp(27px,5vw,38px) 'Playfair Display',serif;color:#ad647b;margin:0 0 18px}
+.panel p{font-size:16px;line-height:1.85;margin:0 0 14px}
+.soft{color:#a67882;font-style:italic}
+.love-list{columns:2;column-gap:36px;padding-left:25px}
+.love-list li{break-inside:avoid;padding:0 0 11px 4px;line-height:1.55;font-size:14px}
+.love-list li::marker{color:#d58ca2;font-weight:700}
+.note-card{background:#fff5f4;border-left:4px solid #e4a6b5;border-radius:14px;padding:17px 19px;margin:18px 0}
+.profile{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:20px 0}
+.fact{background:#fff7f6;border:1px solid #f4dce0;border-radius:15px;padding:13px 15px}
+.fact b{display:block;color:#b16e81;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px}
+.fact span{font-size:15px}
+.closing{text-align:center;margin:35px 0 0;color:#ae7d88;font-family:'Sacramento',cursive;font-size:32px}
+.back{display:block;margin:22px auto 0;border:0;background:#f5d6dc;color:#965c70;padding:10px 18px;border-radius:30px;font-weight:700;cursor:pointer}
+footer{text-align:center;font-size:12px;color:#b28b91;margin-top:30px}
+@media(max-width:600px){.menu{grid-template-columns:1fr}.love-list{columns:1}.profile{grid-template-columns:1fr}.hero{padding-top:30px}}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    
+    <div class="sparkle">♡</div>
+    <h1>WELCOME SHRIYANSHH!!</h1>
+    <p class="subtitle">Hope your day is as lovely as you are. ♡</p>
+    <p class="intro-note">A little something to make you smile. ♡</p>
+  </header>
+
+  <nav class="menu" aria-label="Choose a little note">
+    <button onclick="openPanel('miss',this)"><span>💌</span>IF u ever miss me</button>
+    <button onclick="openPanel('love',this)"><span>🎀</span>things i love about u</button>
+    <button onclick="openPanel('sad',this)"><span>🧸</span>If u feel sad</button>
+    <button onclick="openPanel('about',this)"><span>🌷</span>IF UR CONFUSED ABOUT anything related to me</button>
+  </nav>
+
+  <section class="panel" id="miss">
+    <h2>If you ever miss me… 💌</h2>
+    <p>Since ur reading this, ik ur missing me… and guess what? I miss u too. Probably more than you think. ♡</p>
+    <p>Just know that I'll always be there for u. You don't need to worry about being too much, saying the wrong thing, or having a bad day. You can talk to me about the biggest problem or the tiniest random thing that happened — I want to hear it all.</p>
+    <p>Even when we're not sitting next to each other, it doesn't mean we're far away in the ways that matter. A little distance, a busy day, or a quiet moment cannot erase the bond we share. You're important to me, and I hope you never forget that.</p>
+    <p>If you miss me, close your eyes for a second and remember one of our happiest moments. Imagine me smiling at you and telling you, “I'm right here, silly.” I may not be beside you every second, but I'm always cheering for you.</p>
+    <p>And please don't overthink, okay? You never have to earn my care by being perfect. Be yourself. Take your time. Tell me when something is bothering you. We'll figure things out one step at a time.</p>
+    <div class="note-card"><p><b>One promise:</b> You matter to me on your good days, your messy days, your quiet days, and every day in between. Sending you the biggest virtual huggg. 🫂💗</p></div>
+    <p class="soft">P.S. Missing me? That's your cue to come say hiiii. Hehehe. ♡</p>
+  </section>
+
+  <section class="panel" id="love">
+    <h2>100 things I love about you 🎀</h2>
+    <p><b>I love everything about you — still, here's the list:</b></p>
+    <ol class="love-list">
+      <li>Your smile.</li><li>Your laugh.</li><li>The way your eyes light up.</li><li>Your voice.</li><li>Your sense of humour.</li>
+      <li>The way you make ordinary moments special.</li><li>Your kindness.</li><li>Your honesty.</li><li>Your caring nature.</li><li>Your little reactions.</li>
+      <li>The way you listen.</li><li>Your silly jokes.</li><li>Your cute expressions.</li><li>Your confidence.</li><li>Your thoughtful side.</li>
+      <li>The way you make me feel comfortable.</li><li>Your patience.</li><li>Your energy.</li><li>Your uniqueness.</li><li>Your hugs.</li>
+      <li>The way you look at me.</li><li>Your conversations.</li><li>Your random stories.</li><li>Your playful side.</li><li>Your calm presence.</li>
+      <li>The way you remember little things.</li><li>Your determination.</li><li>Your dreams.</li><li>Your enthusiasm.</li><li>Your warmth.</li>
+      <li>The way you make me laugh.</li><li>Your adorable habits.</li><li>Your caring words.</li><li>Your respect for others.</li><li>Your efforts.</li>
+      <li>The way you cheer me up.</li><li>Your curious mind.</li><li>Your good heart.</li><li>Your excitement over things you love.</li><li>Your goofy moments.</li>
+      <li>The way time flies when we're together.</li><li>Your reassuring presence.</li><li>Your little compliments.</li><li>Your sincerity.</li><li>Your courage.</li>
+      <li>The way you make memories feel special.</li><li>Your cute smile when you're shy.</li><li>Your ability to make me feel heard.</li><li>Your individuality.</li><li>The way you are unapologetically you.</li>
+      <li>Your laugh even at the silliest things.</li><li>Your enthusiasm to try new things.</li><li>Your supportive nature.</li><li>Your sweet gestures.</li><li>Your kindness when nobody is watching.</li>
+      <li>The way you make me feel appreciated.</li><li>Your little surprises.</li><li>Your thoughtful questions.</li><li>Your positive moments.</li><li>Your adorable way of saying things.</li>
+      <li>The way you brighten my day.</li><li>Your ability to make me forget the time.</li><li>Your comforting words.</li><li>Your genuine reactions.</li><li>Your personality.</li>
+      <li>Your sense of adventure.</li><li>Your dedication.</li><li>Your respect.</li><li>Your playful teasing.</li><li>Your sweet side.</li>
+      <li>The way you make silence comfortable.</li><li>Your enthusiasm for your favourite things.</li><li>Your little achievements.</li><li>Your big dreams.</li><li>Your willingness to understand.</li>
+      <li>Your way of making moments memorable.</li><li>Your beautiful heart.</li><li>Your patience with me.</li><li>Your random messages.</li><li>Your presence in my life.</li>
+      <li>The way you make me feel safe to be myself.</li><li>Your expressions when you're surprised.</li><li>Your sense of fun.</li><li>Your gentle side.</li><li>Your individuality and quirks.</li>
+      <li>The way you make even boring days better.</li><li>Your efforts to make things right.</li><li>Your little acts of kindness.</li><li>Your honesty with me.</li><li>Your laugh that I could recognise anywhere.</li>
+      <li>The memories we've already made.</li><li>The memories we still get to make.</li><li>The way you inspire me.</li><li>Your company.</li><li>Your adorable imperfections.</li>
+      <li>The way you are growing into yourself.</li><li>Your ability to make me smile without trying.</li><li>The fact that you're you.</li><li>All the little things I can't put into words.</li><li>Simply, everything that makes you YOU.</li>
+    </ol>
+    <div class="note-card"><p>If I list everything, the website will lag hehehehe. 😭💗</p></div>
+  </section>
+
+  <section class="panel" id="sad">
+    <h2>If you ever feel sad… 🧸</h2>
+    <p>First of all, come hereeee. Biggest hug ever. 🫂</p>
+    <p>Remember our first meeting? It was so so so great. I still love thinking about how that moment became the beginning of all these little memories. And remember our first hug? I hope you know how special that felt to me.</p>
+    <p>Think about us sitting together, talking about everything and absolutely nothing, laughing at random things, and forgetting to check the time. Remember holding each other close, looking into each other's eyes, and those quiet moments when no words were even needed?</p>
+    <p>Those moments mean so much to me. The firsts, the silly conversations, the comfortable silences, the smiles, the tiny details — I treasure them. And there are still so many more memories waiting for us.</p>
+    <p>If today feels heavy, you don't have to pretend you're okay. You can tell me what's wrong, or we can sit quietly, talk about random stuff, or simply take a little break from everything. You don't need to have the perfect words.</p>
+    <p>Please remember that one difficult day doesn't define you. You're allowed to make mistakes, feel confused, take rest, and try again tomorrow. I'm proud of you for making it through days that aren't easy.</p>
+    <div class="note-card"><p><b>And listen carefully:</b> I LOVE U A LOT LIKE A LOTTT!!!! More than this tiny website can explain. You're precious, you're appreciated, and you deserve gentleness — especially from yourself. 💗</p></div>
+    <p>Take a deep breath, drink some water, unclench your shoulders, and give yourself a little kindness. One step at a time, okay?</p>
+    <p class="soft">If I were there right now, I'd give you the warmest hug and remind you that you don't have to face every feeling all by yourself. ♡</p>
+  </section>
+
+  <section class="panel" id="about">
+    <h2>A little about me 🌷</h2>
+    <p>Since apparently you need a whole section to understand me… here you goooo. Hehehe. ♡</p>
+    <div class="profile">
+      <div class="fact"><b>Name</b><span>Vedanshi Pandey</span></div>
+      <div class="fact"><b>Nickname</b><span>Mithi</span></div>
+      <div class="fact"><b>Name u want to give to me</b><span>Anything that you give me — I'll love it anyways. ♡</span></div>
+      <div class="fact"><b>Age</b><span>15</span></div>
+      <div class="fact"><b>DOB</b><span>19/09/2011</span></div>
+      <div class="fact"><b>Favourite colour</b><span>Aqua blue</span></div>
+      <div class="fact"><b>Favourite food</b><span>Momos</span></div>
+      <div class="fact"><b>Dream holiday destination</b><span>Paris</span></div>
+      <div class="fact"><b>Favourite place on Earth</b><span>Your arms. ♡</span></div>
+      <div class="fact"><b>Second favourite place</b><span>Anywhere in the mountains</span></div>
+      <div class="fact"><b>Ethnicity / roots</b><span>Uttar Pradesh</span></div>
+      <div class="fact"><b>Favourite sport</b><span>Basketball 🏀</span></div>
+      <div class="fact"><b>Favourite dessert</b><span>White chocolate sweet</span></div>
+      <div class="fact"><b>Favourite chocolate</b><span>KitKat</span></div>
+      <div class="fact"><b>Favourite flower</b><span>Lilies — and since they don't sell lilies here, white roses. 🤍</span></div>
+      <div class="fact"><b>My kind of perfect day</b><span>Good conversations, lots of laughter, and people I love around me.</span></div>
+      <div class="fact"><b>My happy place</b><span>Little moments that turn into favourite memories.</span></div>
+      <div class="fact"><b>Something I value</b><span>Honesty, effort, reassurance, and being understood.</span></div>
+      <div class="fact"><b>One little wish</b><span>To keep making beautiful memories with the people who matter. ✨</span></div>
+    </div>
+    <div class="note-card"><p><b>Important instruction:</b> If you ever have a question about me, just ask me. I would rather you ask than sit there overthinking. And remember, I'm still a work in progress — there's always more to discover. ♡</p></div>
+  </section>
+
+  <div class="closing">a little love note, just for you ♡</div>
+  <footer>Made with ♡, pink shades, and a tiny bit of silliness.</footer>
+</main>
+<script>
+function openPanel(id,button){
+  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('show'));
+  document.querySelectorAll('.menu button').forEach(b=>b.classList.remove('active'));
+  const panel=document.getElementById(id);
+  panel.classList.add('show');
+  button.classList.add('active');
+  panel.scrollIntoView({behavior:'smooth',block:'start'});
+}
+</script>
+</body>
+</html>
